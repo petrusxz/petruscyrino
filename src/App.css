@@ -1,0 +1,61 @@
+.App {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("./assets/img/adventure-climb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template:
+    [row1-start] "topStart . topEnd topEnd" 20% [row1-end] 
+    [row2-start] "middle middle middle middle" auto [row2-end] 
+    [row3-start] "bottomStart bottomMdStart bottomMdEnd bottomEnd" 20% [row3-end] 
+    / 25%;
+}
+
+.App-header {
+  grid-area: topStart;
+}
+
+.App-logo {
+  height: 80px;
+  margin-left: 1em;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+label {
+  max-height: 1.5em;
+}
+
+.App-about {
+  grid-area: bottomStart;
+}
+
+.App-portfolio {
+  grid-area: bottomMdStart;
+}
+
+.App-blog {
+  grid-area: bottomMdEnd;
+}
+
+.App-contact {
+  grid-area: bottomEnd;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

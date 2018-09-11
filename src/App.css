@@ -1,61 +1,64 @@
 .App {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: url("./assets/img/adventure-climb.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: grid;
-  grid-template:
-    [row1-start] "topStart . topEnd topEnd" 20% [row1-end] 
-    [row2-start] "middle middle middle middle" auto [row2-end] 
-    [row3-start] "bottomStart bottomMdStart bottomMdEnd bottomEnd" 20% [row3-end] 
-    / 25%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("./assets/img/blurred-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template: [row1-start] "topStart topStart topEnd topEnd" 25% [row1-end] [row2-start] "middleStart middleStart middleEnd middleEnd" 25% [row2-end] [row3-start] "middleBtStart middleBtStart middleBtEnd middleBtEndE" 25% [row3-end] [row4-start] "middleBtStart middleBtStart middleBtEnd middleBtEndE" 25% [row4-end] / 25% 25% 25% 25%;
 }
 
 .App-header {
-  grid-area: topStart;
+    grid-area: topStart;
+    margin: 4%;
 }
 
 .App-logo {
-  height: 80px;
-  margin-left: 1em;
+    height: 50px;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.5);
+.App-menu {
+    grid-area: middleBtEnd / middleBtEnd / middleBtEndE / middleBtEndE;
+    margin: 4%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Main-welcome {
+    grid-area: middleStart / middleStart / middleEnd / middleEnd;
+    font-size: 8em;
+    font-weight: bold;
+    color: white;
 }
 
 label {
-  max-height: 1.5em;
+    display: table;
+    max-height: 1.5em;
+    margin: 2% 0;
+    font-size: 3.5em;
 }
 
-.App-about {
-  grid-area: bottomStart;
+@media (min-width: 1400px) {
+    .App-menu {
+        grid-area: middleBtEndE;
+    }
 }
 
-.App-portfolio {
-  grid-area: bottomMdStart;
-}
-
-.App-blog {
-  grid-area: bottomMdEnd;
-}
-
-.App-contact {
-  grid-area: bottomEnd;
+@media (max-width: 860px) {
+    .App-menu {
+        grid-area: middleBtStart / middleBtStart / middleBtEnd / middleBtEnd;
+    }
+    label {
+        font-size: 2.5em;
+    }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

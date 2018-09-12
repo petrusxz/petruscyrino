@@ -2,63 +2,46 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url("./assets/img/blurred-dark.jpg");
+    background: url("./assets/img/background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: grid;
-    grid-template: [row1-start] "topStart topStart topEnd topEnd" 25% [row1-end] [row2-start] "middleStart middleStart middleEnd middleEnd" 25% [row2-end] [row3-start] "middleBtStart middleBtStart middleBtEnd middleBtEndE" 25% [row3-end] [row4-start] "middleBtStart middleBtStart middleBtEnd middleBtEndE" 25% [row4-end] / 25% 25% 25% 25%;
 }
 
 .App-header {
-    grid-area: topStart;
-    margin: 4%;
+    height: 62px;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
 .App-logo {
-    height: 50px;
+    height: 68%;
+    vertical-align: middle;
 }
 
 .App-menu {
-    grid-area: middleBtEnd / middleBtEnd / middleBtEndE / middleBtEndE;
-    margin: 4%;
-    text-transform: uppercase;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-gap: 5%;
+    justify-self: end;
+}
+
+.App-menu a {
+    display: block;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 10px 0;
+    min-width: 100px;
+    text-decoration: unset;
+    color: rgba(255, 255, 255, .6);
+}
+
+.active-link {
+  color: white !important;
 }
 
 .Main-welcome {
-    grid-area: middleStart / middleStart / middleEnd / middleEnd;
     font-size: 8em;
     font-weight: bold;
-    color: white;
-}
-
-label {
-    display: table;
-    max-height: 1.5em;
-    margin: 2% 0;
-    font-size: 3.5em;
-}
-
-@media (min-width: 1400px) {
-    .App-menu {
-        grid-area: middleBtEndE;
-    }
-}
-
-@media (max-width: 860px) {
-    .App-menu {
-        grid-area: middleBtStart / middleBtStart / middleBtEnd / middleBtEnd;
-    }
-    label {
-        font-size: 2.5em;
-    }
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }

@@ -7,7 +7,8 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 
-import logo from './assets/img/logo-white.svg';
+import logo from './assets/img/logo-black.svg';
+import logoHover from './assets/img/logo-yellow.svg';
 import './App.css';
 
 class App extends Component {
@@ -15,21 +16,25 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          
+          <NavLink className="App-logo" to="/">
+            <img src={logo} alt="logo"
+            onMouseOver={e => (e.currentTarget.src = logoHover)}
+            onMouseOut={e => (e.currentTarget.src = logo)} />
+          </NavLink>
+
           <div className="App-menu">
-            <NavLink activeClassName="active-link" to="/aboutme">About Me</NavLink>
+            <NavLink activeClassName="active-link" to="/aboutme">About me</NavLink>
             <NavLink activeClassName="active-link" to="/portfolio">Portfolio</NavLink>
             <NavLink activeClassName="active-link" to="/contact">Contact</NavLink>
           </div>
         </div>
-        
-        <div className="Main-welcome">
+
+        <div className="App-content">
           <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route path='/aboutme' component={About}/>
-              <Route path='/portfolio' component={Portfolio}/>
-              <Route path='/contact' component={Contact}/>
+            <Route exact path='/' component={Home} />
+            <Route path='/aboutme' component={About} />
+            <Route path='/portfolio' component={Portfolio} />
+            <Route path='/contact' component={Contact} />
           </Switch>
         </div>
       </div>

@@ -1,29 +1,36 @@
 .App {
+    display: grid;
+    grid-template-areas: "header" "content";
+    grid-template-rows: [row1-start] 102px [row1-end row2-start] auto [row2-end];
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url("./assets/img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .App-header {
     height: 62px;
-    padding: 2%;
+    width: 96%;
+    padding: 20px;
     display: grid;
+    grid-area: header;
     grid-template-columns: auto auto;
     align-items: center;
 }
 
 .App-logo {
-    height: 68%;
+    height: 62px;
+    width: 55px;
     vertical-align: middle;
+}
+
+.App-logo img {
+    height: 100%;
 }
 
 .App-menu {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
-    grid-gap: 5%;
+    grid-gap: 40px;
     justify-self: end;
 }
 
@@ -34,14 +41,15 @@
     padding: 10px 0;
     min-width: 100px;
     text-decoration: unset;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .6);
 }
 
 .active-link {
-  color: white !important;
+    color: #f1c40f !important;
 }
 
-.Main-welcome {
-    font-size: 8em;
-    font-weight: bold;
+.App-content {
+    grid-area: content;
+    padding: 0 5%;
+    min-height: 100%;
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import './Contact.css';
 
 class Contact extends Component {
     render() {
         return (
-            <div>
-                Contact
+            <div className="Contact">
+                Send me an email:
+                <br />petrusxz@gmail.com
             </div>
         )
     }

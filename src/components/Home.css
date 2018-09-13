@@ -1,0 +1,14 @@
+.Home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Home-welcome {
+    font-size: 3em;
+}
+
+.Home-welcome u {
+    text-decoration-color: #f1c40f;
+}

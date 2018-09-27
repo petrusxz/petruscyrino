@@ -6,9 +6,11 @@ class Home extends Component {
         return (
             <div className="Home">
                 <div className="Home-welcome">
-                    Trying to build
-                    <br /><u>great things</u> every day,
-                    <br />even if nobody cares.
+                    <div className="Home-name">Petrus Cyrino</div>
+                    <div className="Home-intro">
+                        Trying to build <u>great things</u> every day,
+                        even if nobody cares.
+                    </div>
                 </div>
             </div>
         )

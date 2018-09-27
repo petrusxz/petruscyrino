@@ -1,4 +1,4 @@
-.About {
+.About-row {
     height: 100%;
     max-width: 600px;
     display: grid;
@@ -7,6 +7,18 @@
     margin: auto;
 }
 
-.About img {
+.About-row:last-child {
+    margin-top: 36px;
+}
+
+.About-row img {
     height: 180px;
+}
+
+.About-me h3 {
+    margin: 0;
+}
+
+.About-me {
+    text-align: justify;
 }

@@ -53,3 +53,22 @@
     padding: 0 5%;
     min-height: 100%;
 }
+
+@media (max-width: 560px) {
+    .App-header {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .App-menu {
+        grid-gap: 10px;
+        justify-self: start;
+    }
+    
+    .App-menu a {
+        text-align: right;
+        font-size: 1em;
+        min-width: 70px;
+    }
+}

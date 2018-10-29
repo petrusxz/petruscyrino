@@ -1,8 +1,9 @@
 .Home {
-    height: 100%;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Home-welcome {
@@ -16,11 +17,20 @@
 .Home-name {
     font-size: 2em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .Home-intro {
-    max-width: 560px;
-    font-size: .7em;
+    max-width: 760px;
+    font-size: .5em;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+    .Home-name {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 560px) {
@@ -30,6 +40,5 @@
 
     .Home-intro {
         max-width: 270px;
-        font-size: .5em;
     }
 }

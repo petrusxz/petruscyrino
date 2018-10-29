@@ -8,7 +8,8 @@ class Home extends Component {
                 <div className="Home-welcome">
                     <div className="Home-name">Petrus Cyrino</div>
                     <div className="Home-intro">
-                        Trying to build <u>great things</u> every day,
+                        A <u>Software Craftsman</u> in love with his code, always prone to find a distinct way of thinking
+                        and trying to build <u>great things</u> every day,
                         even if nobody cares.
                     </div>
                 </div>

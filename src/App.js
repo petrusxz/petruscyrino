@@ -16,11 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <NavLink className="App-logo" to="/">
-            <img src={logo} alt="logo"
-            onMouseOver={e => (e.currentTarget.src = logoHover)}
-            onMouseOut={e => (e.currentTarget.src = logo)} />
-          </NavLink>
+          <NavLink className="App-logo" exact activeClassName="active-logo" to="/"></NavLink>
 
           <div className="App-menu">
             <NavLink activeClassName="active-link" to="/aboutme">About me</NavLink>

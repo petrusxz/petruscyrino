@@ -1,6 +1,6 @@
 .App {
     display: grid;
-    grid-template-areas: "header" "content";
+    grid-template-areas: "header""content";
     grid-template-rows: [row1-start] 102px [row1-end row2-start] auto [row2-end];
     position: absolute;
     height: 100%;
@@ -23,8 +23,21 @@
     vertical-align: middle;
 }
 
-.App-logo img {
-    height: 100%;
+.App-logo {
+    height: 62px;
+    width: 54.31px;
+    background: url(assets/img/logo-black.svg) center center no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.App-logo:hover {
+    background: url(assets/img/logo-yellow.svg) center center no-repeat;
+    transition: all 400ms ease-in-out;
+}
+
+.active-logo {
+    background: url(assets/img/logo-yellow.svg) center center no-repeat !important;
 }
 
 .App-menu {
@@ -44,14 +57,29 @@
     color: rgba(0, 0, 0, .6);
 }
 
+.App-menu a:hover {
+    color: #f1c40f !important;
+    transition: color 400ms ease-in-out;
+}
+
 .active-link {
     color: #f1c40f !important;
 }
 
 .App-content {
     grid-area: content;
-    padding: 0 5%;
-    min-height: 100%;
+    min-height: 90%;
+}
+
+.Appear-animation-appear {
+    opacity: 0;
+    transform: translateY(-1rem);
+}
+
+.Appear-animation-appear.Appear-animation-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 800ms ease-in;
 }
 
 @media (max-width: 560px) {
@@ -63,9 +91,9 @@
 
     .App-menu {
         grid-gap: 10px;
-        justify-self: start;
+        justify-self: center;
     }
-    
+
     .App-menu a {
         text-align: right;
         font-size: 1em;

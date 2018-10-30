@@ -37,8 +37,9 @@
     .Home-name {
         font-size: .9em;
     }
-
+    
     .Home-intro {
         max-width: 270px;
+        font-size: .4em;
     }
 }

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
-import petrusImg from './../assets/img/petrus.jpg';
 import './About.css';
+
+import petrusImg from './../assets/img/petrus.jpg';
+import webIcon from './../assets/img/web.svg';
+import mobileIcon from './../assets/img/mobile.svg';
+import backendIcon from './../assets/img/back-end.svg';
 
 class About extends Component {
     render() {
         return (
-            <div className="About">
+            <div>
                 <div className="About-container">
                     <CSSTransitionGroup
                         transitionName="Appear-animation"
@@ -21,7 +25,7 @@ class About extends Component {
                                 <h3>Hello,</h3>
                                 I would like to introduce you an Application Developer from Brazil that loves 
                                 so much his profession in a way that it's easy to lose a good night of sleep 
-                                to talking with you about it, but never without a cup of coffee.
+                                talking with you about it, but never without a cup of coffee.
                             </div>
                         </div>
                     </CSSTransitionGroup>
@@ -38,7 +42,7 @@ class About extends Component {
                                 <p>
                                 Working with the client side it's like letting my mind run free in an open field. 
                                 My perfectionism feels comfortable when gathering all the components needed to 
-                                build an awesome application.
+                                build an awesome experience.
                                 </p>
                             </div>
                             <div className="About-expertise">
@@ -62,23 +66,39 @@ class About extends Component {
                         </h2>
                     </div>
                     <div className="About-skills-card">
-                        <div>Angular</div>
-                        <div>Karma</div>
-                        <div>Jasmine</div>
-                        <div>Ionic</div>
-                        <div>RxJS</div>
-                        <div>React</div>
-                        <div>Jest</div>
-                        <div>Redux</div>
-                        <div>Node.js</div>
-                        <div>Express.js</div>
+                        <div>
+                            <img src={webIcon} alt="web" />
+                            <label>Web</label>
+                            <span>Angular</span>
+                            <span>RxJS</span>
+                            <span>Karma & Jasmine</span>
+                            <span>React.js</span>
+                            <span>Jest</span>
+                        </div>
+                        <div>
+                            <img src={mobileIcon} alt="mobile" />
+                            <label>Mobile</label>
+                            <span>Ionic Framework</span>
+                            <span>Cordova</span>
+                            <span>React Native</span>
+                            <span>Redux</span>
+                        </div>
+                        <div>
+                            <img src={backendIcon} alt="backend" />
+                            <label>Back-end</label>
+                            <span>Node.js</span>
+                            <span>Mocha & Chai</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>ASP.Net Core 2</span>
+                        </div>
                     </div>
                 </div>
                 <div className="About-resume">
                     <h3>Want to find more about me as a professional?</h3>
-                    <span>
+                    <a href="assets/docs/Petrus_CV.pdf" download>
                         Download my CV
-                    </span>
+                    </a>
                 </div>
             </div>
         )

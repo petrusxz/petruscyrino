@@ -7,8 +7,6 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 
-import logo from './assets/img/logo-black.svg';
-import logoHover from './assets/img/logo-yellow.svg';
 import './App.css';
 
 class App extends Component {

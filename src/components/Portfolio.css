@@ -1,0 +1,167 @@
+.Portfolio-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.Portfolio-header hr {
+    height: 3px;
+    background-color: #f1c40f;
+    border: 0;
+    opacity: 0;
+    animation: hr-header 1s ease 1s forwards;
+}
+
+.Portfolio-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.Portfolio-content h3 {
+    font-weight: unset;
+    font-size: .8em;
+}
+
+.Portfolio-content hr {
+    height: 3px;
+    background-color: #f1c40f;
+    margin-left: 0;
+    border: 0;
+    opacity: 0;
+    animation: hr-h3 1s ease 1s forwards;
+}
+
+.Portfolio-projects {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+.Portfolio-projects a {
+    opacity: 0;
+    text-decoration: none;
+    color: #161818;
+    padding: 20px 10px;
+    box-shadow: unset;
+    border: 1px solid #dedede;
+    transition: all 600ms ease-in-out;
+}
+
+.Portfolio-projects a:nth-child(1) {
+    animation: card 1s ease 800ms forwards;
+}
+
+.Portfolio-projects a:nth-child(2) {
+    animation: card 1s ease 1s forwards;
+}
+
+.Portfolio-projects a:nth-child(3) {
+    animation: card 1s ease 1.2s forwards;
+}
+
+.Portfolio-projects a:nth-child(4) {
+    animation: card 1s ease 1.4s forwards;
+}
+
+.Portfolio-projects a:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .26), 0 14px 28px 0 rgba(0, 0, 0, .25);
+    transition: all 600ms ease-in-out;
+}
+
+.Portfolio-projects a:nth-child(2),
+.Portfolio-projects a:nth-child(4) {
+    border-left: unset;
+}
+
+.Portfolio-projects a:nth-child(3),
+.Portfolio-projects a:nth-child(4) {
+    border-top: unset;
+}
+
+.Portfolio-projects span {
+    text-transform: uppercase;
+    font-size: .96em;
+    padding-left: 5px;
+}
+
+.Portfolio-projects i {
+    font-size: .7em;
+    color: rgba(0, 0, 0, .6);
+    float: right;
+}
+
+.Portfolio-projects p {
+    font-size: .8em;
+    font-style: italic;
+    color: rgba(0, 0, 0, .6);
+}
+
+.Portfolio-projects img {
+    width: 12px;
+}
+
+.Portfolio-projects img[alt="npm"] {
+    width: 48px;
+    float: right;
+    padding-right: 20px;
+}
+
+.Portfolio-tools span {
+    display: inline-block;
+    text-transform: none;
+    margin: 3px;
+    padding: 6px 8px;
+    background-color: #f1c40f;
+    border-radius: 15px;
+    color: #161818;
+    font-size: .9em;
+    font-style: italic;
+}
+
+@keyframes hr-header {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 120px;
+        opacity: 1;
+    }
+}
+
+@keyframes card {
+    from {
+        opacity: 0.01;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 560px) {
+    .Portfolio-header h2 {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+
+    .Portfolio-content {
+        padding: 0 20px;
+    }
+
+    .Portfolio-projects {
+        grid-template-columns: repeat(1, minmax(160px, 1fr));
+    }
+
+    .Portfolio-projects a:nth-child(2),
+    .Portfolio-projects a:nth-child(4) {
+        border-left: 1px solid #dedede;
+        ;
+    }
+
+    .Portfolio-projects a:nth-child(2) {
+        border-top: unset;
+    }
+}

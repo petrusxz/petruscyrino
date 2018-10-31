@@ -82,6 +82,17 @@
     transition: all 800ms ease-in;
 }
 
+@keyframes hr-h3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30px;
+        opacity: 1;
+    }
+}
+
 @media (max-width: 560px) {
     .App-header {
         width: 100%;

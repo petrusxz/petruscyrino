@@ -54,12 +54,14 @@ h3 {
     background: url(assets/img/logo-black.svg) center center no-repeat;
     background-size: cover;
     padding: 0;
-    transition: background 400ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .App-logo:hover {
-    background: url(assets/img/logo-yellow.svg) center center no-repeat;
-    transition: background 400ms ease-in-out;
+    height: 58px;
+    width: 49.31px;
+    border: 2px solid #f1c40f;
+    transition: all 100ms ease-in-out;
 }
 
 .active-logo {

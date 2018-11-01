@@ -15,9 +15,12 @@
 }
 
 .Home-name {
-    font-size: 2em;
+    font-size: 1.6em;
+    color: #161618;
     margin-bottom: 16px;
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Expletus Sans', cursive;
 }
 
 .Home-intro {
@@ -35,7 +38,7 @@
 
 @media (max-width: 560px) {
     .Home-name {
-        font-size: .9em;
+        font-size: .8em;
     }
     
     .Home-intro {

@@ -23,9 +23,8 @@ class About extends Component {
                             <hr />
                             <div className="About-me">
                                 <h3>Hello,</h3>
-                                I would like to introduce you an Application Developer from Brazil that loves 
-                                so much his profession in a way that it's easy to lose a good night of sleep 
-                                talking with you about it, but never without a cup of coffee.
+                                I would like to introduce you an Application Developer compromised with his dream 
+                                to create amazing experiences and the propensity to miss sleep in the process, but never without a cup of coffee.
                             </div>
                         </div>
                     </CSSTransitionGroup>
@@ -40,18 +39,17 @@ class About extends Component {
                                 <h3>Front-end Developer</h3>
                                 <hr />
                                 <p>
-                                Working with the client side it's like letting my mind run free in an open field. 
-                                My perfectionism feels comfortable when gathering all the components needed to 
-                                build an awesome experience.
+                                    Working with the client side it's like letting my mind run free in an open field.
+                                    My perfectionism feels comfortable when gathering all the components needed to give life to ideas.
                                 </p>
                             </div>
                             <div className="About-expertise">
                                 <h3>Back-end Developer</h3>
                                 <hr />
                                 <p>
-                                I like to work with applications that have consistency and a well-assembled core. 
-                                I believe that details are important even under the hood, so we can keep the 
-                                engine powerful, tight and clean.
+                                    I like to work with applications that have consistency and a well-assembled core.
+                                    I believe that details are important even under the hood, so we can keep the
+                                    engine powerful, tight and clean.
                                 </p>
                             </div>
                         </div>
@@ -61,8 +59,8 @@ class About extends Component {
                     <div className="About-skills-intro">
                         <h1>A language-agnostic developer</h1>
                         <h2>
-                            I'm always thrilled when learning new facts and mastering an important skill, 
-                            but here are some technologies that I have been trying to master recently:
+                            I'm always thrilled when learning new techniques and mastering an important skill.
+                            Here are some technologies that I have been trying to master recently:
                         </h2>
                     </div>
                     <div className="About-skills-card">
@@ -95,7 +93,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className="About-resume">
-                    <h3>Want to find more about me as a professional?</h3>
+                    <h3>Want to know more about my experience?</h3>
                     <a href="assets/docs/Petrus_CV.pdf" download>
                         Download my CV
                     </a>

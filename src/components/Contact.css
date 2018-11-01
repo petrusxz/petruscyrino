@@ -1,6 +1,151 @@
-.Contact {
-    height: 100%;
-    width: 100%;
+.Contact-header {
     display: flex;
+    justify-content: center;
     align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.Contact-header label {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    line-height: 1.4;
+    font-style: italic;
+    color: #161818;
+    opacity: 0;
+    animation: text-appear 1s ease 700ms forwards;
+}
+
+circle {
+    fill: transparent;
+    stroke: #f1c40f;
+    stroke-width: 1;
+    stroke-dasharray: 534;
+    stroke-dashoffset: 0;
+    -webkit-animation: circle-draw 2s;
+    animation: circle-draw 2s;
+}
+
+.Contact-me {
+    margin: 20px 0;
+}
+
+.Contact-me h3,
+.Contact-mail h3 {
+    text-align: center;
+    font-weight: unset;
+    font-size: .8em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: text-appear 1s ease 800ms forwards;
+}
+
+.Contact-me hr {
+    height: 3px;
+    background-color: #f1c40f;
+    border: 0;
+    opacity: 0;
+    animation: hr-h3 1s ease 900ms forwards;
+}
+
+.Contact-social {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(85px, 1fr));
+    margin: auto;
+    padding: 20px;
+    max-width: 495px;
+}
+
+.Contact-social a {
+    width: 42px;
+    margin: auto;
+}
+
+.Contact-social img {
+    width: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    animation: icons 1.4s ease 1s forwards;
+}
+
+.Contact-social img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.Contact-mail {
+    text-align: center;
+}
+
+.Contact-mail a {
+    color: #161818;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 20px 10px;
+    border: 1px solid #dedede;
+    box-shadow: unset;
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+    animation: text-appear 1s ease 1.2s forwards;
+}
+
+.Contact-mail a:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .26), 0 14px 28px 0 rgba(0, 0, 0, .25);
+    transition: all 600ms ease-in-out;
+}
+
+@keyframes circle-draw {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0.01;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes icons {
+    from {
+        opacity: 0.01;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 42px;
+    }
+}
+
+@media (max-width: 560px) {
+    .Contact-social {
+        grid-template-columns: repeat(5, minmax(35px, 1fr));
+        padding: 20px 20px 0 20px;
+    }
+
+    .Contact-social a {
+        width: 32px;
+    }
+
+    @keyframes icons {
+        from {
+            opacity: 0.01;
+            width: 0;
+        }
+        to {
+            opacity: 1;
+            width: 32px;
+        }
+    }
 }

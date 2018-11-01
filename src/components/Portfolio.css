@@ -21,6 +21,8 @@
 .Portfolio-content h3 {
     font-weight: unset;
     font-size: .8em;
+    opacity: 0;
+    animation: card 1s ease 1s forwards;
 }
 
 .Portfolio-content hr {

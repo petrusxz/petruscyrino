@@ -41,8 +41,8 @@ class Contact extends Component {
                 </div>
                 <div className="Contact-mail">
                     <h3>Or</h3>
-                    <a href="assets/docs/Petrus_CV.pdf" download>
-                        Send me an e-mail
+                    <a href="mailto:petrusxz@gmail.com" target="_top">
+                        Email me
                     </a>
                 </div>
             </div>

@@ -29,7 +29,7 @@ h3 {
     top: 0;
     background-color: white;
     height: 62px;
-    width: 96%;
+    width: 100%;
     padding: 20px;
     display: grid;
     grid-area: header;
@@ -68,9 +68,10 @@ h3 {
 
 .App-menu {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-columns: repeat(3, minmax(70px, 1fr));
     grid-gap: 40px;
     justify-self: end;
+    margin-right: 20px;
 }
 
 .App-menu a {
@@ -127,6 +128,7 @@ h3 {
     .App-menu {
         grid-gap: 10px;
         justify-self: center;
+        margin-right: 0;
     }
     .App-menu a {
         text-align: right;

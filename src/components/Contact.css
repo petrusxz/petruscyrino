@@ -58,17 +58,14 @@ circle {
 }
 
 .Contact-social a {
-    width: 42px;
     margin: auto;
+    width: 0;
+    opacity: 0;
+    animation: icons 1.4s ease 1s forwards;
 }
 
 .Contact-social img {
-    width: 0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    animation: icons 1.4s ease 1s forwards;
+    width: 32px;
 }
 
 .Contact-social img:hover {

@@ -16,12 +16,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isVisible: true,
+      isVisible: true
     };
     
     const scroll$ = fromEvent(window, 'scroll').pipe(
       throttleTime(10),
       map(() => window.pageYOffset),
+      filter((val) => val > 150),
       pairwise(),
       map(([y1, y2]) => (y2 < y1 ? 'Up' : 'Down')),
       distinctUntilChanged(),
@@ -38,13 +39,13 @@ class App extends Component {
 
     scrollUp$.subscribe(() => {
       this.setState({
-        isVisible: true,
+        isVisible: true
       });
     });
     
     scrollDown$.subscribe(() => {
       this.setState({
-        isVisible: false,
+        isVisible: false
       });
     });
   }

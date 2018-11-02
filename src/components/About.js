@@ -23,8 +23,9 @@ class About extends Component {
                             <hr />
                             <div className="About-me">
                                 <h3>Hello,</h3>
-                                I would like to introduce you an Application Developer compromised with his dream 
-                                to create amazing experiences and the propensity to miss sleep in the process, but never without a cup of coffee.
+                                I am a Software Developer committed to making my dreams come true by building amazing 
+                                experiences through technology, having the propensity to losing sleep in the process, 
+                                but never without a cup of coffee.
                             </div>
                         </div>
                     </CSSTransitionGroup>
@@ -47,8 +48,8 @@ class About extends Component {
                                 <h3>Back-end Developer</h3>
                                 <hr />
                                 <p>
-                                    I like to work with applications that have consistency and a well-assembled core.
-                                    I believe that details are important even under the hood, so we can keep the
+                                    I like to work with consistent applications that have a well-assembled core.
+                                    I believe that details are important also under the hood, so we can keep the
                                     engine powerful, tight and clean.
                                 </p>
                             </div>
